@@ -1,0 +1,61 @@
+
+/**
+ * 	jquery.DateSelector.css 
+ */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+.dateSelector-collapse {
+	border: 1px #ddd solid;
+	position: absolute;
+	background: #fff;
+}
+.dateSelector-collapse>div {
+	 float: left;
+}
+.dateSelector-collapse ul li{
+	text-align: center;
+    list-style: none;
+    padding: 7px 0;
+    margin: 3px 3px;
+    display: inline-block;
+    cursor: pointer;
+}
+.dateSelector-collapse .left ul li{
+    width: 50px;
+    font-size: 12px;
+}
+.dateSelector-collapse .month ul li{
+    width: 50px;
+    font-size: 12px;
+}
+.dateSelector-collapse .month {
+	width: 169px;
+	margin-top: 31px;
+}
+.dateSelector-collapse .arrows {
+	cursor: pointer;
+}
+
+.dateSelector-collapse div li:hover{
+    background-color: #FFDFC0;
+}
+.dateSelector-collapse-li-select {
+	background-color: #ff7f00 !important;
+}
+.dateSelector-collapse .left {
+	width: 113px;
+	height: 100%;
+	border-right: 1px #ddd solid;
+}
+.dateSelector-collapse .year{
+	margin-top: -5px;
+}
+
+.dateSelector-collapse .close {
+	position: absolute;
+	right: 12px;
+	top: 7px;
+	cursor: pointer;
+}
