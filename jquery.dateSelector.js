@@ -67,8 +67,8 @@ $.fn.dateSelector = function() {
 		});
 		
 		function step(index) {
-			$('.dateSelector-collapse .year ul').addClass('hide');
-			$('.dateSelector-collapse .year ul:eq(' + index + ')').removeClass('hide');
+			collapse.find('.year ul').addClass('hide');
+			collapse.find('.year ul:eq(' + index + ')').removeClass('hide');
 			activateIndex = index;
 		}
 		return {
@@ -109,6 +109,7 @@ $.fn.dateSelector = function() {
 			
 			me.val(yearModule.getValue() + '-' + monthModule.getValue());
 			collapse.addClass('hide');
+			me.trigger('change');
 		});
 		
 		return {
@@ -135,10 +136,8 @@ $.fn.dateSelector = function() {
 		};
 	}();
 
-	this.on({
-		focus: function() {
-			collapseModule.collapse.removeClass('hide');
-		}
+	this.on('focus', function() {
+		collapseModule.collapse.removeClass('hide');
 	});
 	
 	if(me.val() == '') {

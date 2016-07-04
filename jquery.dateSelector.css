@@ -31,11 +31,12 @@
     font-size: 12px;
 }
 .dateSelector-collapse .month {
-	width: 169px;
+	width: 170px;
 	margin-top: 31px;
 }
 .dateSelector-collapse .arrows {
 	cursor: pointer;
+	font-size: 19px !important;
 }
 
 .dateSelector-collapse div li:hover{
@@ -43,14 +44,17 @@
 }
 .dateSelector-collapse-li-select {
 	background-color: #ff7f00 !important;
+	color: #fff;
+	font-weight: 700;
 }
 .dateSelector-collapse .left {
-	width: 113px;
+	width: 115px;
 	height: 100%;
 	border-right: 1px #ddd solid;
 }
 .dateSelector-collapse .year{
 	margin-top: -5px;
+	text-align: center;
 }
 
 .dateSelector-collapse .close {
