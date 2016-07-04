@@ -17,10 +17,6 @@ $.fn.dateSelector = function() {
 		].join('');
 		
 		var collapse = $(html); 
-		collapse.css({
-			left: me.offset().left,
-			top: me.offset().top + me.outerHeight() + 2
-		});
 		
 		collapse.on('click', '.close', function() {
 			collapse.addClass('hide');
@@ -138,6 +134,10 @@ $.fn.dateSelector = function() {
 
 	this.on('focus', function() {
 		collapseModule.collapse.removeClass('hide');
+		collapseModule.collapse.css({
+			left: me.offset().left,
+			top: me.offset().top + me.outerHeight() + 2
+		});
 	});
 	
 	if(me.val() == '') {
