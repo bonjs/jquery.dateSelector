@@ -19,7 +19,7 @@ $.fn.dateSelector = function() {
 		var collapse = $(html); 
 		collapse.css({
 			left: me.offset().left,
-			top: me.offset().top + me.outerHeight()
+			top: me.offset().top + me.outerHeight() + 2
 		});
 		
 		collapse.on('click', '.close', function() {
